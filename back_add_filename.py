@@ -7,8 +7,9 @@ current_directory = os.getcwd()
 for filename in os.listdir(current_directory):
     # 只处理以 .jpg 结尾的文件
     if filename.lower().endswith('.jpg'):
-        # 构造新文件名，在旧文件基础上前面添加“xxx”（xxx可自定义，直接修改代码）
+        # 分离文件名和扩展名
         base, ext = os.path.splitext(filename)
+        # 构造新文件名，在旧文件名的末尾添加 "xxx"（xxx可自定义，直接修改代码）
         new_filename = f'{base}xxx{ext}'
         # 获取旧文件路径和新文件路径
         old_file = os.path.join(current_directory, filename)

@@ -15,7 +15,7 @@ def remove_chars_in_range(filename, x, y):
 # 获取当前目录
 current_directory = os.getcwd()
 
-# 定义要删除字符的范围，从x到y（包含x和y）
+# 定义要删除字符的范围，从x到y（包含x和y），示例中2和4可自行修改
 x = 2  # 从第x个字符开始删除（1-based index）
 y = 4  # 到第y个字符结束删除（1-based index）
 

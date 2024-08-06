@@ -10,7 +10,7 @@ files = [f for f in os.listdir(current_directory) if f.lower().endswith('.jpg')]
 # 遍历所有找到的 .jpg 文件，并按顺序进行重命名
 for index, filename in enumerate(files, start=1):
     # 使用枚举函数提供的索引值（从1开始）构造新的文件名
-    # 新文件名格式为 'zzz' 加上当前文件的顺序编号，再加上 '.jpg' 扩展名
+    # 新文件名格式为 'zzz' 加上当前文件的顺序编号，再加上 '.jpg' 扩展名，示例中的zzz可自行修改
     new_filename = f'zzz{index}.jpg'
     
     # 构造旧文件的完整路径

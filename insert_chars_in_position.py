@@ -18,8 +18,8 @@ def insert_chars_in_position(filename, x, insertion):
 current_directory = os.getcwd()
 
 # 定义要插入字符的位置和插入内容
-x = 2  # 从第x个字符之后的位置插入（0-based index）
-insertion = 'abc'  # 插入的字符串，示例为“abc”，abc可自行修改为想插入的内容
+x = 2  # 从第x个字符之后的位置插入（0-based index），示例2可自行修改
+insertion = 'abc'  # 插入的字符串，示例abc可自行修改
 
 # 遍历当前目录下的所有文件
 for filename in os.listdir(current_directory):
